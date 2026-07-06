@@ -1,17 +1,41 @@
-# AWS Project - Build a Full End-to-End Web Application with 7 Services | Step-by-Step Tutorial
-
-This repo contains the code files used in this [YouTube video](https://youtu.be/K6v6t5z6AsU).
+# AWS Project - Serverless Wild Rydes Web App - Build a Full End-to-End Web Application
 
 ## TL;DR
-We're creating a web application for a unicorn ride-sharing service called Wild Rydes (from the original [Amazon workshop](https://aws.amazon.com/serverless-workshops)).  The app uses IAM, Amplify, Cognito, Lambda, API Gateway and DynamoDB, with code stored in GitHub and incorporated into a CI/CD pipeline with Amplify.
+This project demonstrates the deployment of a serverless web application on AWS. The frontend is hosted using AWS Amplify, authentication is handled through Amazon Cognito, API requests are routed through Amazon API Gateway, backend logic is executed using AWS Lambda, and ride request information is stored in Amazon DynamoDB, with code stored in GitHub and incorporated into a CI/CD pipeline with Amplify.
+We're creating a web application for a unicorn ride-sharing service called Wild Rydes (from the original [Amazon workshop](https://aws.amazon.com/serverless-workshops)).
 
 The app will let you create an account and log in, then request a ride by clicking on a map (powered by ArcGIS).  The code can also be extended to build out more functionality.
 
+## Architecture
+
+![Architecture](aws_screenshots/Architecture.png)
+
 ## Cost
-All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/).  Outside of the Free Tier, there may be small charges associated with building the app (less than $1 USD), but charges will continue to incur if you leave the app running.  Please see the end of the YouTube video for instructions on how to delete all resources used in the video.
+All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/). Outside of the Free Tier, there may be small charges associated with building the app (less than $1 USD), but charges will continue to incur if you leave the app running. 
+All AWS resources were deleted after successful implementation and testing to avoid ongoing cloud charges. This repository contains the complete source code and documentation required to reproduce the project.
 
 ## The Application Code
 The application code is here in this repository.
+
+## Application
+
+### Homepage
+
+![Homepage](aws_screenshots/login_page.png)
+
+### Login
+
+![Login](aws_screenshots/registration_page.png)
+
+## AWS Deployment
+
+### Amplify
+
+![Amplify](aws_screenshots/Amplify-app_overview.png)
+
+### Deployment History
+
+![Deployment](aws_screenshots/Amplify-app_deployment_history.png)
 
 ## The Lambda Function Code
 Here is the code for the Lambda function, originally taken from the [AWS workshop](https://aws.amazon.com/getting-started/hands-on/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/module-3/ ), and updated for Node 20.x:
