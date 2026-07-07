@@ -89,7 +89,7 @@ AWS Lambda executes the backend business logic whenever a ride request is submit
 
 The Lambda function is configured with Amazon API Gateway as its trigger, enabling serverless execution whenever the frontend invokes the REST API.
 
-![Lambda Trigger](screenshots/RequestUnicorn_lambda_function.png)
+![Lambda Trigger](aws_screenshots/RequestUnicorn_lambda_function.png)
 
 ---
 
